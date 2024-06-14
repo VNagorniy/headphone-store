@@ -1,0 +1,9 @@
+.collection__title {
+	padding: 48px 0;
+}
+
+.collection__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
