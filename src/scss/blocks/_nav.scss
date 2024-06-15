@@ -61,6 +61,10 @@
 	font-weight: 700;
 	color: var(--tagline-link);
 	text-align: center;
+
+	&--white {
+		color: #fff;
+	}
 }
 
 @include mobile {
