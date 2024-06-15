@@ -26,10 +26,10 @@ function timer() {
 		const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
 		const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-		daysElement.innerText = days;
-		hoursElement.innerText = hours;
-		minutesElement.innerText = minutes;
-		secondsElement.innerText = seconds;
+		daysElement.innerText = days < 10 ? '0' + days : days;
+		hoursElement.innerText = hours < 10 ? '0' + hours : hours;
+		minutesElement.innerText = minutes < 10 ? '0' + minutes : minutes;
+		secondsElement.innerText = seconds < 10 ? '0' + seconds : seconds;
 	}
 
 	updateTimer();
