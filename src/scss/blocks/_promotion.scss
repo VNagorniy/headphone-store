@@ -4,7 +4,7 @@
 	display: grid;
 	gap: 24px;
 
-	&::before {
+	&::after {
 		content: '';
 		display: block;
 		width: 50%;
@@ -21,6 +21,13 @@
 		@include mediaBg() {
 			background-image: url('./../img/promotion/bg@2x.jpg');
 		}
+
+		@include mobile {
+			// display: none;
+			position: static;
+			height: 367px;
+			width: 100%;
+		}
 	}
 }
 
@@ -30,6 +37,11 @@
 	padding-right: calc((100% - var(--container-width)) / 2);
 
 	@include tablet {
+		padding-right: var(--container-padding);
+	}
+
+	@include mobile {
+		padding-left: var(--container-padding);
 		padding-right: var(--container-padding);
 	}
 }
@@ -44,6 +56,10 @@
 	@include tablet {
 		padding: 50px 0;
 		padding-left: var(--container-padding);
+	}
+
+	@include mobile {
+		padding: 28px 0;
 	}
 }
 
@@ -67,12 +83,20 @@
 	letter-spacing: -0.4px;
 	line-height: 1.1;
 	font-family: var(--font-accent);
+
+	@include mobile {
+		font-size: 34px;
+	}
 }
 
 .promotion__text {
 	color: #121212;
 	font-size: 20px;
 	line-height: 1.6;
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .promotion__timer {
