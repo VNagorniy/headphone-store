@@ -1,15 +1,21 @@
 .swiper-slide {
 	width: 262px !important;
+
+	@include mobile {
+		width: 231px !important;
+	}
 }
 
 .swiper-pagination {
-	position: static !important;
+	position: relative !important;
+	// position: static !important;
 	display: flex;
 	align-items: center;
 	gap: 8px;
 }
 
 .swiper-pagination-bullet {
+	// flex-shrink: 0;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -33,10 +39,15 @@
 		transition: all 0.2s ease-in;
 	}
 }
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	border: 1px solid #141718;
 
 	&::before {
 		background-color: #141718;
 	}
+}
+
+.swiper-pagination-bullets-dynamic {
+	overflow: hidden;
 }

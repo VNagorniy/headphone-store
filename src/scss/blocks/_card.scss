@@ -75,7 +75,9 @@
 	transform: translateY(50%);
 	pointer-events: none;
 
-	// display: none;
+	@include mobile {
+		display: none;
+	}
 }
 
 .card__desc {
@@ -94,6 +96,12 @@
 	font-size: 16px;
 	line-height: 1.625;
 	color: #141718;
+
+	&--ellipses {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		text-wrap: nowrap;
+	}
 }
 
 .card__price {
