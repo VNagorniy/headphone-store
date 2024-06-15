@@ -28,6 +28,10 @@
 	padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
 
 	padding-right: calc((100% - var(--container-width)) / 2);
+
+	@include tablet {
+		padding-right: var(--container-padding);
+	}
 }
 
 .promotion__content {
@@ -36,6 +40,11 @@
 
 	display: grid;
 	gap: 24px;
+
+	@include tablet {
+		padding: 50px 0;
+		padding-left: var(--container-padding);
+	}
 }
 
 .promotion__desc {

@@ -11,20 +11,33 @@
 		<div class="tagline">
 	<img src="./img/icons/ticket-percent.svg" alt="Icon" />
 
-	<div class="tagline__desc">30% off storewide — Limited time!</div>
-	<a href="#!" class="tagline__link">
+	<span class="tagline__desc">30% off storewide — Limited time!</span>
+	<span class="tagline__link">
 		Shop Now
 		<img src="./img/icons/arrow-right.svg" alt="arrow-right" />
-	</a>
+	</span>
 
 	<button class="tagline__close">
-		<img src="./img/icons/close.svg" alt="Close" />
+		<!-- <img src="./img/icons/close.svg" alt="Close" /> -->
+		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M15.4419 5.44194C15.686 5.19786 15.686 4.80214 15.4419 4.55806C15.1979 4.31398 14.8021 4.31398 14.5581 4.55806L10 9.11612L5.44194 4.55806C5.19786 4.31398 4.80214 4.31398 4.55806 4.55806C4.31398 4.80214 4.31398 5.19786 4.55806 5.44194L9.11612 10L4.55806 14.5581C4.31398 14.8021 4.31398 15.1979 4.55806 15.4419C4.80214 15.686 5.19786 15.686 5.44194 15.4419L10 10.8839L14.5581 15.4419C14.8021 15.686 15.1979 15.686 15.4419 15.4419C15.686 15.1979 15.686 14.8021 15.4419 14.5581L10.8839 10L15.4419 5.44194Z"
+			/>
+		</svg>
 	</button>
+	<a href="#!" class="tagline__link-overlay"></a>
 </div>
  <nav class="nav">
 	<div class="container">
 		<div class="nav_row">
-			<a href="" class="nav__logo logo">3legant. </a>
+			<div class="nav__logo">
+				<button class="nav__btn-mobile-nav">
+					<img src="./img/icons/menu.svg" alt="Navigation" />
+				</button>
+				<a href="" class="logo">3legant</a>
+			</div>
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
 				<li class="nav__item">
@@ -36,8 +49,8 @@
 				<li class="nav__item"><a href="#!" class="nav__link">Contact Us</a></li>
 			</ul>
 			<div class="nav_btns">
-				<button class="nav__btn"><img src="./img/icons/search.svg" alt="Search" /></button>
-				<button class="nav__btn"><img src="./img/icons/user.svg" alt="User" /></button>
+				<button class="nav__btn nav__btn--search"><img src="./img/icons/search.svg" alt="Search" /></button>
+				<button class="nav__btn nav__btn--user"><img src="./img/icons/user.svg" alt="User" /></button>
 				<button class="nav__btn"><img src="./img/icons/cart.svg" alt="Cart" /><span class="nav__btn-count">2</span></button>
 			</div>
 		</div>
@@ -863,7 +876,7 @@
 		<div class="promotion__content">
 			<div class="promotion__desc">
 				<p class="promotion__tagline">PROMOTION</p>
-				<h2 class="promotion__title">Hurry up! 40% OFF</h2>
+				<h2 class="promotion__title">Hurry up! 40%&nbsp;OFF</h2>
 				<div class="promotion__text">
 					<p>Thousands of high tech are waiting for you</p>
 				</div>
