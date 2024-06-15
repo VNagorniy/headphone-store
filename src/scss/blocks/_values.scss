@@ -17,4 +17,15 @@
 		flex: 1;
 		min-width: 262px;
 	}
+
+	@include mobile {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(150px, 1fr));
+		gap: 24px 8px;
+
+		& > * {
+			flex: none;
+			min-width: auto;
+		}
+	}
 }

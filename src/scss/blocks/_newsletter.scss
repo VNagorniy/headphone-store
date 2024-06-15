@@ -13,23 +13,41 @@
 	@include mediaBg() {
 		background-image: url('./../img/newsletter/bg@2x.jpg');
 	}
+
+	@include tablet {
+		background-image: none;
+	}
+
+	@include mobile {
+		height: auto;
+		padding: 95px 0;
+	}
 }
 .newsletter__content {
 	flex-grow: 1;
-	max-width: 488px;
+	max-width: 552px;
 	text-align: center;
+
+	padding: 0 var(--container-padding);
 }
 
 .newsletter__title {
 	margin-bottom: 8px;
+	font-size: 28px !important;
 }
+
 .newsletter__desc {
 	margin-bottom: 32px;
 
 	font-size: 18px;
 	line-height: 1.6667;
 	color: #121212;
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
+
 .form-newsletter {
 	padding-bottom: 12px;
 	display: flex;
