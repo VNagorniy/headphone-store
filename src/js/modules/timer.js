@@ -1,5 +1,5 @@
 function timer() {
-	const endDate = new Date('Aug 01, 2024, 00:00:00');
+	const endDate = new Date('Nov 30, 2024, 00:00:00');
 
 	const daysElement = document.querySelector('#days');
 	const minutesElement = document.querySelector('#minutes');
