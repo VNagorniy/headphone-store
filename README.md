@@ -4,4 +4,4 @@
 - SCSS
 - Gulp
 
-[Смотреть демо]()
+[Смотреть демо](https://vnagorniy.github.io/headphone-store/)
